@@ -1,6 +1,6 @@
 package p01_sparse_array;
 
-public class test01 {
+public class sparseArray {
     public static void main(String[] args) {
         // 创建一个 init array， 11*11
         // 0: empty    1: black    2: blue
@@ -28,7 +28,7 @@ public class test01 {
             }
         }
 
-        //  知道了 非 0 的 个数： sparsearray  的 行数 就确定了， 列数 固定为3
+        //  知道了 非 0 的 个数： sparsearray  的 行数 就确定了， 列数 固定为3(因为储存的是:  行 ，列， 值)
         System.out.println("sum: " + sum);
         int sparseArr[][] = new int[sum+1][3];
         // 给 sparseArr  赋值：  第一行是 ： 原始数组 有 多少行 多少列
@@ -37,15 +37,15 @@ public class test01 {
         // 第0 行有 多少数据 --》 列数
         sparseArr[0][1] = chestArr1[0].length;
         // 一共 有多少有效 数据
-        sparseArr[0][1] = sum;
+        sparseArr[0][2] = sum;
 
         // loop the chestArr again, and put the position and value into the sparseArr
         int k = 1;
         for (int i = 0; i < chestArr1.length; i++) {
             for(int j = 0; j < chestArr1[0].length; j++) {
                 if(chestArr1[i][j] != 0) {
-                    sparseArr[k][0] = i;
-                    sparseArr[k][1] = j;
+                    sparseArr[k][0] = i;// which row
+                    sparseArr[k][1] = j;// which column
                     sparseArr[k][2] = chestArr1[i][j];
                     k++;
                 }
@@ -62,7 +62,20 @@ public class test01 {
         }
 
 
-        // 现在 要把sporseArr回转成  normal array
+        // 现在 要把sparseArr回转成  normal array
+//        int lineNum = sparseArr[0][0];
+//        int ColumnNum = sparseArr[0][1];
+//        int ValueNum = sparseArr[0][2];
+//
+//        int normalArr[][] = new int[lineNum][ColumnNum];
+//
+//        for(int i = 0; i < lineNum; i++) {
+//            for(int j = 0; i < lineNum; i++) {
+//                if(sparseArr[i][j])
+//            }
+//        }
+
+
 
     }
 }
