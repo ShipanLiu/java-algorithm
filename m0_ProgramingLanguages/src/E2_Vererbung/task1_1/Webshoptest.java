@@ -1,7 +1,7 @@
-package Exercise2_Vererbung.task1_1;
+package E2_Vererbung.task1_1;
 
-import Exercise2_Vererbung.task1_1.Entity.Buch;
-import Exercise2_Vererbung.task1_1.Entity.CD;
+import E2_Vererbung.task1_1.Entity.Buch;
+import E2_Vererbung.task1_1.Entity.CD;
 
 public class Webshoptest {
     public static void main(String[] args) {

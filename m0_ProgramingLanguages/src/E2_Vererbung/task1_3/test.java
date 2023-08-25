@@ -1,9 +1,9 @@
-package Exercise2_Vererbung.task1_3;
+package E2_Vererbung.task1_3;
 
 
-import Exercise2_Vererbung.task1_3.Entity.Artikel;
-import Exercise2_Vererbung.task1_3.Entity.Buch;
-import Exercise2_Vererbung.task1_3.Entity.CD;
+import E2_Vererbung.task1_3.Entity.Artikel;
+import E2_Vererbung.task1_3.Entity.Buch;
+import E2_Vererbung.task1_3.Entity.CD;
 
 public class test {
 

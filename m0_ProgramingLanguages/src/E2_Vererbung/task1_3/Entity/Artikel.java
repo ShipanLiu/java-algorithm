@@ -1,4 +1,4 @@
-package Exercise2_Vererbung.task1_3.Entity;
+package E2_Vererbung.task1_3.Entity;
 
 public abstract class Artikel {
     protected String title;

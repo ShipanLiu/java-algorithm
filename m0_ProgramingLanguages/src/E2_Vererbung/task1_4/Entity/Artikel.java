@@ -1,6 +1,6 @@
-package Exercise2_Vererbung.task1_2.Entity;
+package E2_Vererbung.task1_4.Entity;
 
-public class Artikel {
+public abstract class Artikel {
     protected String title;
     protected double preis;
     protected long barcode;
@@ -21,5 +21,9 @@ public class Artikel {
     public long getBarcode() {
         return this.barcode;
     }
+
+
+    // 假如有 method 是 abstract 的话，那么 类 也因该加上abstract
+    public abstract String getBeschreibung();
 
 }

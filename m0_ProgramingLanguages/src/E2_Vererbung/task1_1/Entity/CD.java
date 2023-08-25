@@ -1,4 +1,4 @@
-package Exercise2_Vererbung.task1_1.Entity;
+package E2_Vererbung.task1_1.Entity;
 
 public class CD {
 

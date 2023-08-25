@@ -1,4 +1,4 @@
-package Exercise2_Vererbung.task1_2.Entity;
+package E2_Vererbung.task1_2.Entity;
 
 public class Buch extends Artikel{
     private int seiten;

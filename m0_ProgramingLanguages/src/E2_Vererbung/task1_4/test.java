@@ -1,7 +1,7 @@
-package Exercise2_Vererbung.task1_4;
+package E2_Vererbung.task1_4;
 
 
-import Exercise2_Vererbung.task1_4.Entity.*;
+import E2_Vererbung.task1_4.Entity.*;
 
 public class test {
 
