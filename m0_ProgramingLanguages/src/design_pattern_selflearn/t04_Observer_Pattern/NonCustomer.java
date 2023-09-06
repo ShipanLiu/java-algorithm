@@ -1,5 +1,10 @@
 package design_pattern_selflearn.t04_Observer_Pattern;
 
+/*
+ * step3:  implement Observer， 谁是 Observer
+ *
+ * */
+
 public class NonCustomer implements Observer{
     private String name;
 

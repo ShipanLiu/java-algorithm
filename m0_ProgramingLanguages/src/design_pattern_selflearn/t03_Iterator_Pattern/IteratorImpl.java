@@ -2,6 +2,7 @@ package design_pattern_selflearn.t03_Iterator_Pattern;
 
 public class IteratorImpl implements Iterator{
 
+    // 这里可以使用 泛型。
     private String[] items; // Items to iterate over
     private int position; // Current position in the iteration
 
