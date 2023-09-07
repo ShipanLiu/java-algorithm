@@ -1,5 +1,11 @@
 package E6_Observer_Muster.example;
 
+/*
+* step 3
+*
+* */
+
+
 public class Customer implements Observer {
 
     private String name;
