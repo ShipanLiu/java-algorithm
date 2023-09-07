@@ -1,0 +1,3 @@
+文件来源： src/E6_Observer_Muster/exercise/Main.java
+
+[Thu Sep 07 13:33:18 CEST 2023][jiba1][我是接收者]
