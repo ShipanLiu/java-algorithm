@@ -12,14 +12,13 @@ import java.util.List;
 public class ProxyInternetConnection implements InternetConnection{
     private boolean useWhitelist;
     // as a proxy, I have access to the rea; class
-    private InternetConnection connection;
+    private InternetConnection connection = new NetworkInternetConnection();
 
     private List<String> whitelist, blacklist;
 
 
     public ProxyInternetConnection(boolean useWhitelist) {
         this.useWhitelist = useWhitelist;
-        connection = new NetworkInternetConnection();
         // read the white/black list
         try {
             whitelist = Files.readAllLines(Path.of("whitelist.txt"));

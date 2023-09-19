@@ -1,7 +1,5 @@
 package E6_Observer_Muster.exercise;
 
-import E6_Observer_Muster.example.Observer;
-
 import java.util.ArrayList;
 
 /*

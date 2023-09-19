@@ -6,7 +6,7 @@ package E6_Observer_Muster.example;
 * */
 
 
-public class Customer implements Observer {
+public class Customer implements IAbonent {
 
     private String name;
 

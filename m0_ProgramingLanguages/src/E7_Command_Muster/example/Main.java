@@ -4,7 +4,7 @@ package E7_Command_Muster.example;
 * step5 <--- MenuOperation
 * step6
 * */
-public class Benutzer {
+public class Main {
     public static void main(String[] args) {
         // now I have a document
         Document doc = new Document("jiba.txt");

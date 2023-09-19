@@ -4,11 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         // create Observers
-        Observer p1 = new Customer("jiba1");
-        Observer p2 = new Customer("jiba2");
-        Observer p3 = new Customer("jiba3");
-        Observer p4 = new Customer("jiba4");
-        Observer p5 = new Customer("jiba5");
+        IAbonent p1 = new Customer("jiba1");
+        IAbonent p2 = new Customer("jiba2");
+        IAbonent p3 = new Customer("jiba3");
+        IAbonent p4 = new Customer("jiba4");
+        IAbonent p5 = new Customer("jiba5");
 
         // create ZeitungVerlag
         ZeitungsVerlag zv = new ZeitungsVerlag();

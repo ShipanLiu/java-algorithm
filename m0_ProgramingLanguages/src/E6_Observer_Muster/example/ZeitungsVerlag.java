@@ -11,10 +11,14 @@ import java.util.Date;
 
 public class ZeitungsVerlag {
     // define a list of Observer
-    private ArrayList<Observer> list = new ArrayList<>();
+    private ArrayList<IAbonent> list = new ArrayList<>();
+
+
+    //假如你忘记加上 无参的 constructor 的话，Java会 自动给你加上
+    public ZeitungsVerlag() {}
 
     // add observer into list
-    public void addObserver(Observer observer) {
+    public void addObserver(IAbonent observer) {
         if(!list.contains(observer)) {
             list.add(observer);
         } else {
@@ -23,7 +27,7 @@ public class ZeitungsVerlag {
     }
 
     // delete observer from list
-    public void removeObserver(Observer observer) {
+    public void removeObserver(IAbonent observer) {
         if(list.contains(observer)) {
             list.remove(observer);
         } else {
@@ -34,7 +38,7 @@ public class ZeitungsVerlag {
     // notify all obervers
     public void notifyAllObervers(Zeitung zeitung) {
         // loop the list
-        for(Observer observer : list) {
+        for(IAbonent observer : list) {
             observer.erhalteZeitung(zeitung);
         }
     }
